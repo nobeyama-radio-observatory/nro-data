@@ -1,0 +1,55 @@
+# 資産の台帳：データの保管
+# 項目の定義はハブの assets/README.md を参照。
+#   https://github.com/nobeyama-radio-observatory/nro-context/blob/main/assets/README.md
+# 2026-11-18 に新しく作った（判断記録 0006）。40周年記念誌から AI が埋めた。未記入は聞き取り（interviews/）で埋める。
+#
+# 接続先、ネットワーク構成、アクセスの方式、ソフトウェアの構成部品と版など、制御と情報セキュリティの詳細は書かない。
+# この台帳にない id の置き場所は、ハブの assets/README.md の資産の索引で引ける。
+#
+# 出典の略記
+#   40周年記念誌：『野辺山宇宙電波観測所40周年記念誌』2022年2月（国立国会図書館 請求記号 MB12-M7）。p.N はそのページ。
+#     書誌の詳細はハブの history/README.md の出典の略記。年次報告と食い違うときは年次報告を採る
+#   聞き取りYYYY-MM-DD(-n) 問N：interviews/YYYY-MM-DD(-n).md の問N
+
+- id: db-nrodb-nobeyama
+  name: NRODB（野辺山）
+  kind: 計算機
+  status: 運用中
+  introduced: 2013年度に運用を開始。2013年度の計算機の更新で観測所のデータ解析システムを廃止し、解析を三鷹の計算機で行うことになったため、データを渡す仕組みとして観測所の計算機グループがメーカーと開発した
+  maintenance: {by: 未記入, condition: 未記入, effort: 未記入}
+  renewal: 未記入
+  owner_role: 未定
+  maintainers: 未記入
+  sources:
+    - 導入、対象のデータ：40周年記念誌 p.57
+  note: 対象は、2013年度からマージしたデータ、2015年度から SAM45 のロギングデータ。観測とマージが終わると野辺山の NRODB に保存する。2021年12月の時点でおよそ23万件。利用者は Web とコマンドラインで取得する
+
+- id: db-nrodb-mitaka
+  name: NRODB（三鷹）
+  kind: 計算機
+  depends_on: [db-nrodb-nobeyama]
+  status: 運用中
+  introduced: 2013年度（野辺山の NRODB と同時）
+  maintenance: {by: 未記入, condition: 未記入, effort: 未記入}
+  renewal: 未記入
+  owner_role: 未定
+  maintainers: 未記入
+  sources:
+    - 40周年記念誌 p.57
+  note: 野辺山の NRODB のデータを週1回の保守のときに三鷹に送り、二か所で持つ。2011年の震災の停電の経験から、電力の管轄が違う拠点に置くほうが失われにくいと考えたため
+
+- id: db-radio-archive
+  name: 電波アーカイブ
+  kind: 計算機
+  status: 運用中
+  introduced: 未記入
+  maintenance: {by: 未記入, condition: 未記入, effort: 未記入}
+  renewal: 未記入
+  owner_role: 未定
+  maintainers: 未記入
+  sources:
+    - 名称：所内の相談（2026-11-18）
+  note: >-
+    40周年記念誌 p.57 にある一般向けのデータアーカイブ（Nobeyama-45m/ASTE Science Data Archive）と同じものかは未確認。
+    記念誌によれば、そのアーカイブは2016年度にアルマのコンピューティングチームが中心になって作り、2017年度に運用を開始した。
+    のちに ASTE のデータも対象にし、2021年度から CASA の形式のデータとパイプライン処理のデータも公開している
