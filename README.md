@@ -2,7 +2,7 @@
 
 国立天文台 野辺山宇宙電波観測所の データの保管の**運用リポジトリ**です。観測所でこの装置群をどう使い、どう保守しているかを集めます。文脈基盤のハブ [nro-context](https://github.com/nobeyama-radio-observatory/nro-context) から参照されます。
 
-扱うもの：NRODB（野辺山）、NRODB（三鷹）、電波アーカイブ
+扱うもの：NRODB（野辺山）、NRODB（三鷹）、電波アーカイブ、YKSP の観測生データの保管と配信（暫定）
 
 ## 位置づけ
 
