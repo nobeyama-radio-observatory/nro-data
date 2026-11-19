@@ -20,6 +20,8 @@
   renewal: 更新の予定はない。YATSUGATAKE が稼働し始めると、データの形式が変わり量も急に増えるので、既存のシステムを改修してディスクを増やすか、新しいシステムを作る必要がある
   owner_role: 計算機グループ
   maintainers: 1
+  repos:
+    - {name: nro45-interfaces, url: https://github.com/nobeyama-radio-observatory/nro45-interfaces}
   docs:
     - 観測者向け：観測データ（取得の方法の所在、データの量、占有期間） https://www.nro.nao.ac.jp/projects/45m/data/
     - 非公開（所在のみ）：取得の方法。計算機グループの計算機とネットワークのシステムのページ（ハブの policy/non-public.md）（2026-11-19 に確認）
