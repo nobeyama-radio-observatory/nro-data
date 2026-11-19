@@ -66,3 +66,26 @@
     運用は、天文データセンター、ASTE、野辺山宇宙電波観測所の合同。ロギングとマージの後の生データに加え、パイプラインで自動的に解析した後の FITS ファイルも登録している。
     利用者を NRODB とは別に管理し、公開したデータは誰でも、占有期間中のデータは所有者だけが取得できる（聞き取り2026-11-18 問1、問2、問4）。
     maintenance.by の「メーカー」は外部の事業者を指す。天文データセンターは国立天文台の中の別の部署で、項目の定義の選択肢にないため「所内」に含めた
+
+- id: db-yksp-delivery
+  name: YKSP の観測生データの保管と配信（暫定）
+  kind: 計算機
+  depends_on: [sw-sam45compat-lc, sw-cosmos-merge]
+  status: 試験中
+  maintenance: {by: 所内, condition: 未記入, effort: 未記入}
+  renewal: >-
+    暫定。恒久の経路（NRODB を改修するか、新しいシステムを作るか）が決まるまでの仕組み。NRODB の更新の見込みは db-nrodb-nobeyama の renewal。
+    電波アーカイブへの登録、三鷹への二重化、保管の期間（1年の案）を過ぎたものの扱いは決まっていない（YATSUGATAKE-NRO45-sam45compat の docs/plan.md の5）
+  owner_role: 計算機グループ
+  maintainers: 未記入
+  repos:
+    - {name: YATSUGATAKE-NRO45-sam45compat, url: https://github.com/nobeyama-radio-observatory/YATSUGATAKE-NRO45-sam45compat}
+    - {name: nro45-interfaces, url: https://github.com/nobeyama-radio-observatory/nro45-interfaces}
+  docs:
+    - 非公開（所在のみ）：取得の方法。計算機グループの計算機とネットワークのシステムのページ（ハブの policy/non-public.md）
+  sources:
+    - 役割、取得の単位、所内 LAN からだけ取得できること、未決の事柄：YATSUGATAKE-NRO45-sam45compat の docs/plan.md の5
+    - SAM45 とは別の観測生データになること：YATSUGATAKE-NRO45-sam45compat の README
+  note: >-
+    YKSP の観測時系列データと観測生データを、SAM45 の経路（db-nrodb-nobeyama）とは別に保管し、観測者に配信する。観測者は、自分のグループとプロジェクトの単位で取得する。
+    取得できるのは所内 LAN からだけで、リモートの観測者の取得の方法は決まっていない。データ経路の全体と未決の事柄は docs/data-path.md

@@ -20,6 +20,7 @@
 | 場所 | 中身 |
 |---|---|
 | [assets.yaml](assets.yaml) | 台帳。項目の定義はハブの [assets/README.md](https://github.com/nobeyama-radio-observatory/nro-context/blob/main/assets/README.md) |
+| [docs/data-path.md](docs/data-path.md) | データ経路の運用。観測データの保管、二重化、保管の期間、アーカイブへの登録、観測者の取得の規則と状態。決まっていないこと |
 | [interviews/](interviews/README.md) | 聞き取りの記録。公開資料にない値（保守の手間、担い手の数、更新の見込みなど）の出典 |
 
 台帳の id の置き場所は、ハブの[資産の索引](https://github.com/nobeyama-radio-observatory/nro-context/blob/main/assets/README.md)で引けます。`nro45m`（アンテナ）は [nro-45m-antenna](https://github.com/nobeyama-radio-observatory/nro-45m-antenna) にあります。
