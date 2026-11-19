@@ -20,6 +20,9 @@
   renewal: 更新の予定はない。YATSUGATAKE が稼働し始めると、データの形式が変わり量も急に増えるので、既存のシステムを改修してディスクを増やすか、新しいシステムを作る必要がある
   owner_role: 計算機グループ
   maintainers: 1
+  docs:
+    - 観測者向け：観測データ（取得の方法の所在、データの量、占有期間） https://www.nro.nao.ac.jp/projects/45m/data/
+    - 非公開（所在のみ）：取得の方法。計算機グループの計算機とネットワークのシステムのページ（ハブの policy/non-public.md）（2026-11-19 に確認）
   sources:
     - 導入、対象のデータ：40周年記念誌 p.57
     - 保守、担い手の数、更新の見込み、担当：聞き取り2026-11-18 問1、問3、問4
@@ -50,6 +53,9 @@
   renewal: 更新の予定はない。YATSUGATAKE が稼働し始めると、データの形式が変わり量も急に増えるので、既存のシステムを改修してディスクを増やすか、新しいシステムを作る必要がある
   owner_role: 計算機グループ
   maintainers: 1
+  docs:
+    - 入口 https://nobeyama-archive.nao.ac.jp/user/index.html
+    - 観測データ（占有期間の後の公開） https://www.nro.nao.ac.jp/projects/45m/data/ （2026-11-19 に確認）
   sources:
     - 導入：40周年記念誌 p.57
     - 記念誌のアーカイブと同じものであること、中身：聞き取り2026-11-18 問2
